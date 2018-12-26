@@ -1,0 +1,21 @@
+Get all guide information:
+
+SELECT guide.personnr, guide.fnamn, guide.enamn, guide.tel, guide.email, språkkunskap.språk, utställningsguide.utställning 
+FROM guide INNER JOIN språkkunskap ON 
+     guide.personnr=språkkunskap.guide INNER JOIN 
+     utställningsguide ON guide.personnr=utställningsguide.guide;
+
+Get langugages from guide
+
+SELECT * 
+        FROM (SELECT guide.personnr, guide.fnamn, guide.enamn, guide.tel, guide.email, språkkunskap.språk 
+        FROM guide 
+        INNER JOIN språkkunskap ON guide.personnr=språkkunskap.guide) AS guideinfo 
+        WHERE personnr = ?
+
+
+SELECT guide.personnr, guide.fnamn, guide.enamn, guide.tel, guide.email, språkkunskap.språk 
+FROM guide INNER JOIN språkkunskap ON guide.personnr=språkkunskap.guide
+
+
+select count(namn) FROM konsttyp

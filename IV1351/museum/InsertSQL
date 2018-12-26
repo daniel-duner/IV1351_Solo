@@ -1,0 +1,22 @@
+INSERT INTO språk (namn) VALUES ('Danska');
+INSERT INTO språk (namn) VALUES ('Polska');
+INSERT INTO språk (namn) VALUES ('Lettiska');
+INSERT INTO språk (namn) VALUES ('Portugisiska');
+INSERT INTO språk (namn) VALUES ('Holländska');
+INSERT INTO språk (namn) VALUES ('Thailändska');
+INSERT INTO språk (namn) VALUES ('Koreanska');
+INSERT INTO språk (namn) VALUES ('Grekiska');
+INSERT INTO språk (namn) VALUES ('Finska');
+INSERT INTO språk (namn) VALUES ('Isländska');
+
+
+INSERT INTO utställning (titel, startdatum, slutdatum, yta) 
+VALUES ('Renäsansen','2019-01-01','2019-03-30', '500');
+INSERT INTO utställning (titel, startdatum, slutdatum, yta) 
+VALUES ('Vikingatiden','2019-02-01','2019-04-30', '800');
+INSERT INTO utställning (titel, startdatum, slutdatum, yta) 
+VALUES ('Medeltiden','2019-06-01','2019-07-30', '300');
+INSERT INTO utställning (titel, startdatum, slutdatum, yta) 
+VALUES ('Italienska konstnärer','2019-08-01','2019-10-30', '200');
+INSERT INTO utställning (titel, startdatum, slutdatum, yta) 
+VALUES ('Franska revolutionen','2019-09-01','2019-12-30', '200');

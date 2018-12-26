@@ -1,0 +1,211 @@
+@import url('fonts.css');
+
+.body{
+    font-family: 'Cinzel', serif;
+    font-size:0.5vw;
+}
+
+.bg{
+    position: absolute;
+    z-index:-1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.grid{
+    z-index: 0;
+    display:grid;
+    grid-template-columns:repeat(20, 5vw) ;
+    grid-template-rows:repeat(20, 5vh) ;
+}
+.inner_grid{
+    background:rgba(255, 255, 255, 0.486);
+    display:grid;
+    grid-column: 3/19;
+    grid-row: 1/21;
+    grid-template-columns:repeat(40, 2vw);
+    grid-template-rows:repeat(20, 5vh);
+}
+
+/*TITLE*/
+
+.title{
+    grid-column: 1/41;
+    grid-row: 1/3;
+    text-align: center;
+}
+
+.title>h1{
+    font-size: 5vw;
+    color:white;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+}
+
+/*SIDEBAR*/
+
+.sidebar{
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    width:100%;
+    height: 100%;
+    grid-column: 2/11;
+    grid-row: 4/20;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
+#menu{
+    width: 90%;
+    height:4vh;
+    margin: auto;
+    margin-top:3vh;
+}
+
+#menu>ul>li{
+    font-size:1.8vw;
+    text-align: left;
+    text-transform: uppercase;
+    list-style:none;
+}
+
+.guide_list, .exhibition_list{
+    width:80%;
+}
+
+.guide_list>li, .exhibition_list>li{
+    text-align: left;
+    font-size: 1vw;
+    list-style:none;
+}
+
+.exhibition_tour:hover, .guide_list>li:hover, .exhibition_list>li:hover{
+    color:white;
+    cursor: pointer;
+}
+
+.exhibition_tour:active, .guide_list>li:active, .exhibition_list>li:active{
+    color:rgba(148, 136, 136, 0.342);
+}
+
+/*DISPLAY*/
+
+.display{
+    font-family: 'Cinzel', serif;
+    width:100%;
+    height: 100%;
+    grid-column: 12/40;
+    grid-row: 4/12;
+    border-color: rgb(255, 255, 255) ;
+    /*border-style:solid;*/
+}
+
+.exhibition_title{
+    font-size:1.2vw;
+    width:100%;
+    height:20%;
+
+}
+
+.exhibition_title>h1{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size:1.5vw;
+}
+.exhibition_title>h2{
+    text-align: left;
+}
+
+.exhibition_tours{
+    overflow: auto;
+    width:100%;
+    height:80%;
+}
+.exhibition_tours>p:nth-child(2n+0){
+    background-color: white; 
+}
+.exhibition_tours>p:nth-child(2n+1){
+    background-color: rgba(255, 255, 255, 0.7); 
+}
+.exhibition_tour{
+    display:block;
+    text-align: center;
+}
+
+.guide_display{
+    font-size: 0.7vw;
+    display:grid;
+    grid-template-columns:repeat(18, 3vw);
+    grid-template-rows:repeat(7, 5vh);
+}
+
+.guide_name{
+    grid-column: 1/7;
+    grid-row: 1/2;
+}
+
+
+.guide_competences{
+    grid-column: 1/7;
+    grid-row: 2/9;
+}
+
+.guide_tours{
+    grid-column:7/19;
+    grid-row: 1/9;
+}
+
+
+/*CONTROLS*/
+.controls{
+    font-family: 'Cinzel', serif;
+    display: none;
+   /* grid-template-columns: repeat(2, 28vw);
+    grid-template-rows: 5vh 30vh;*/
+    width:100%;
+    height: 100%;
+    grid-column: 12/40;
+    grid-row: 13/20;
+}
+.controls button{
+ min-width:5vw;
+ min-height:2vh;
+ margin-right:0.5vw;
+ margin-bottom:0.3vh;
+}
+.controls p{
+    font-size:1vw;
+}
+.comp_pick{
+    min-width:12vw;
+    min-height:2vh;
+    margin-right:0.5vw;
+    margin-bottom:0.3vh;
+}
+button{
+    font-family: 'Cinzel', serif;
+    background-color:rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    border-color:rgba(133, 132, 132, 0.205);
+}
+
+button:focus{
+    outline:none;
+}
+
+.edit_guide{
+    display: none;
+    height:90%;
+    width:100%;
+    font-size:0.9vw;
+    grid-column: 12/16;
+    grid-row: 12/13;
+}
+.edit_button{
+    font-size:0.9vw;
+    height:4vh;
+    min-width: 15vw;;
+    width:15vw;
+}
